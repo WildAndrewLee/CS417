@@ -1,0 +1,13 @@
+import java.rmi.RemoteException;
+import java.rmi.server.*;
+import PlaceData.PlaceDataProto;;
+
+public class Places extends UnicastRemoteObject implements IPlaces {
+	public Places() throws RemoteException {
+		// pass
+	}
+
+	public Place lookup(String location, String state) throws RemoteException {
+		
+	}
+}

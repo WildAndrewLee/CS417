@@ -1,0 +1,14 @@
+import java.rmi.Naming;
+
+public class PlaceServer {
+	public static void main(String[] args){		
+		try{
+			int port = Integer.parseInt(args[0]);
+			String url = "//localhost:" + port + "/Places";
+			Naming.rebind(url,  new Places());
+		}
+		catch(Exception e){
+			System.err.println("No valid port specified for arg0.");
+		}
+	}
+}

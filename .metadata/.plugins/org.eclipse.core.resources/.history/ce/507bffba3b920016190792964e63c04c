@@ -1,0 +1,19 @@
+import java.io.FileInputStream;
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+import PlaceData.PlaceDataProto.PlaceList;
+
+public class Places extends UnicastRemoteObject implements IPlaces {
+	public Places() throws RemoteException {
+		try{
+			PlaceList.parseFrom(new FileInputStream("places/places-proto.bin"));
+		}
+		catch(Exception e){
+			throw new RemoteException("Unable to load places/places-proto.bin");
+		}
+	}
+
+	public Place lookup(String location, String state) throws RemoteException {
+		return null;
+	}
+}

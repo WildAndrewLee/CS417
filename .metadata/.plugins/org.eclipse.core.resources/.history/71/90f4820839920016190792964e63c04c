@@ -1,0 +1,9 @@
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+import java.rmi.server.*;
+
+public class Places extends UnicastRemoteObject implements Remote {
+	public Places() throws RemoteException {
+		
+	}
+}
