@@ -1,0 +1,10 @@
+public class PlaceServer {
+	public static void main(String[] args){		
+		try{
+			int port = Integer.parseInt(args[0]);
+		}
+		catch(Exception e){
+			System.err.println("No valid port specified for arg0.");
+		}
+	}
+}
