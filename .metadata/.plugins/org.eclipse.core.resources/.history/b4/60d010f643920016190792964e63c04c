@@ -40,7 +40,7 @@ public class Client {
 			Airport[] nearestAirports = airports.lookup(place.latitude, place.longitude);
 			
 			for(Airport airport : nearestAirports){
-				System.out.println("code=" + airport.code + ", name=" + airport.name + ", state=" + airport.state + " distance: " + airport.distance + " miles");
+				
 			}
 		}
 		catch(Exception e){

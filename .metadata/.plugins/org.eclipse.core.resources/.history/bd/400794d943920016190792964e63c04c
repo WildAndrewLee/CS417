@@ -34,13 +34,10 @@ public class Client {
 			// TODO: Airport binding.
 			
 			Place place = places.lookup(city, state);
-			
-			System.out.println(place.fullName + ", " + place.state + ": " + place.latitude + ", " + place.longitude);
-			
 			Airport[] nearestAirports = airports.lookup(place.latitude, place.longitude);
 			
 			for(Airport airport : nearestAirports){
-				System.out.println("code=" + airport.code + ", name=" + airport.name + ", state=" + airport.state + " distance: " + airport.distance + " miles");
+				
 			}
 		}
 		catch(Exception e){

@@ -7,7 +7,7 @@ public class Places extends UnicastRemoteObject implements IPlaces {
 	
 	public Places() throws RemoteException {
 		try{
-			placeList = PlaceDataProto.PlaceList.parseFrom(new FileInputStream("places/places-proto.bin"));
+			placeList = PlaceList.parseFrom(new FileInputStream("places/places-proto.bin"));
 		}
 		catch(Exception e){
 			throw new RemoteException("Unable to load places/places-proto.bin");
