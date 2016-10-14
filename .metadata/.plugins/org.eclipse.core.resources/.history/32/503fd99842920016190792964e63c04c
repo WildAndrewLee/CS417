@@ -1,0 +1,16 @@
+import java.rmi.Naming;
+import java.rmi.RemoteExeption;
+
+public class Client {
+	public static void main(String[] args){
+		try{
+			for(String arg : args){
+				
+			}
+		}
+		catch(Exception e){
+			System.err.println("Unable to start client.");
+			e.printStackTrace();
+		}
+	}
+}
