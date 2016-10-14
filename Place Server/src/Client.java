@@ -1,4 +1,5 @@
 import java.rmi.Naming;
+import java.util.List;
 
 public class Client {
 	public static void main(String[] args){
@@ -37,7 +38,7 @@ public class Client {
 			
 			System.out.println(place.fullName + ", " + place.state + ": " + place.latitude + ", " + place.longitude);
 			
-			Airport[] nearestAirports = airports.lookup(place.latitude, place.longitude);
+			List<Airport> nearestAirports = airports.lookup(place.latitude, place.longitude);
 			
 			for(Airport airport : nearestAirports){
 				System.out.println("code=" + airport.code + ", name=" + airport.name + ", state=" + airport.state + " distance: " + airport.distance + " miles");
