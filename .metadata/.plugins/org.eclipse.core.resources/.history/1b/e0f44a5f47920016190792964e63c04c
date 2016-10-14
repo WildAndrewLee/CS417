@@ -31,7 +31,7 @@ public class Client {
 			String airportsURL = "//" + host + ":" + port + "/Airport";
 			
 			IPlaces places = (IPlaces) Naming.lookup(placesURL);
-			IAirport airports = (IAirport) Naming.lookup(airportsURL);
+			// TODO: Airport binding.
 			
 			Place place = places.lookup(city, state);
 			
