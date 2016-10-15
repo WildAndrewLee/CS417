@@ -1,9 +1,0 @@
-import java.io.Serializable;
-import java.rmi.server.UnicastRemoteObject;
-
-public class Place extends UnicastRemoteObject implements Serializable {
-	public String fullName;
-	public String state;
-	public double latitude;
-	public double longitude;
-}

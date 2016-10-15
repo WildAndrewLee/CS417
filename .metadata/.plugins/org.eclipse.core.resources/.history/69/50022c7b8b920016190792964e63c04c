@@ -1,7 +1,0 @@
-import java.util.List;
-
-public interface IAirport extends Remote {
-
-	List<Airport> lookup(double latitude, double longitude);
-
-}

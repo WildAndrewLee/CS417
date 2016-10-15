@@ -1,8 +1,0 @@
-import java.io.Serializable;
-
-public interface Place implements Serializable {
-	public String fullName;
-	public String state;
-	public double latitude;
-	public double longitude;
-}

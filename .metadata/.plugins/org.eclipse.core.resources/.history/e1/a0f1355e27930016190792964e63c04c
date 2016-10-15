@@ -1,8 +1,0 @@
-import java.rmi.Remote;
-
-public interface IPlace extends Remote {
-	public String getFullName();
-	public String getState();
-	public double getLatitude();
-	public double getLongitude();
-}

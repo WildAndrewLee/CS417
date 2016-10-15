@@ -1,8 +1,0 @@
-import java.io.Serializable;
-
-public class Airport implements IAirport {
-	public String code;
-	public String name;
-	public String state;
-	public double distance;
-}
