@@ -1,0 +1,8 @@
+import java.io.Serializable;
+
+public class Airport implements Serializable {
+	public String code;
+	public String name;
+	public String state;
+	public double distance;
+}

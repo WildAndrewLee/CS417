@@ -1,9 +1,9 @@
-import java.util.List;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 
 public interface IAirport extends Remote {
-
-	List<Airport> lookup(double latitude, double longitude) throws RemoteException;
-
+	public String getCode() throws RemoteException;
+	public String getName() throws RemoteException;
+	public String getState() throws RemoteException;
+	public double getDistance() throws RemoteException;
 }

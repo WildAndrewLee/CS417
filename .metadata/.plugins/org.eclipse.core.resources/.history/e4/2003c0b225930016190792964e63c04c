@@ -1,0 +1,6 @@
+public interface IPlace {
+	public String fullName;
+	public String state;
+	public double latitude;
+	public double longitude;
+}

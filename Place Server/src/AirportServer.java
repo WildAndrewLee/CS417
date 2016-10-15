@@ -1,3 +1,4 @@
+import java.rmi.registry.LocateRegistry;
 import java.rmi.Naming;
 
 public class AirportServer {
@@ -5,6 +6,7 @@ public class AirportServer {
 		try{
 			int port = Integer.parseInt(args[0]);
 			String url = "//localhost:" + port + "/Airports";
+            // LocateRegistry.createRegistry(port);
 			Naming.rebind(url,  new Airports());
 		}
 		catch(Exception e){

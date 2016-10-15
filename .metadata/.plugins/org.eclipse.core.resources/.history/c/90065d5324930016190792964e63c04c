@@ -1,0 +1,13 @@
+import java.io.Serializable;
+import java.util.List;
+
+public class Airport implements Serializable {
+	public String code;
+	public String name;
+	public String state;
+	public double distance;
+	public List<Airport> lookup(double latitude, double longitude) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

@@ -1,0 +1,6 @@
+public interface IAirport {
+	public String code;
+	public String name;
+	public String state;
+	public double distance;
+}
