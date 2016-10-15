@@ -4,6 +4,6 @@ import java.rmi.RemoteException;
 
 public interface IAirport extends Remote {
 
-	List<Airport> lookup(double latitude, double longitude) throws RemoteException;
+	List<Airport> lookup(double latitude, double longitude);
 
 }

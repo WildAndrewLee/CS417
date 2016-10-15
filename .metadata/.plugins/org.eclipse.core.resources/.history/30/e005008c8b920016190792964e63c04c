@@ -41,7 +41,7 @@ private AirportDataProto.AirportList airportList;
 		return airports;
 	}
 
-	private double getDistance(double airportLat, double airportLon, double latitude, double longitude) throws RemoteException
+	private double getDistance(double airportLat, double airportLon, double latitude, double longitude)
 	{
 		double lat1Cos = Math.cos(Math.toRadians(latitude));
 		double lat2Cos = Math.cos(Math.toRadians(airportLat));
